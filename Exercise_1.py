@@ -6,15 +6,14 @@
 import numpy as np
 
 # Function definitions
-def Add2plus2():
-    #This function just add 2 + 2
-    s = 2 + 2
-    return s
+def AddNumber(a,b):
+    #This function just add two numbers
+    return a + b
 
 def MultiplyArray(a,b):
     #This function multiplies two arrays using numpy dot
-    c = a.dot(b);
-    return c
+    a.dot(b)
+    return a.dot(b)
 
 def MultiplyArrayManually(a,b):
     #This function only multiplies two 3x3 arrays manually
@@ -42,9 +41,9 @@ def MultiplyArrayManually(a,b):
     return c
             
     
-# Use of function Add2plus2
-a = Add2plus2()
-print('Result from Add2plus2 = ',a)
+# Use of function AddNumber
+a = AddNumber(2,2)
+print('Result from AddNumber = ',a)
 
 # Use of function MultiplyArray
 v = np.random.random((3,3))
